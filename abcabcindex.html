@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY MOTHER's DAY</title>
+    <link rel="icon" href="heart.png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // 页面首次加载时跳转到动画页
+        if (!sessionStorage.getItem('hasVisited')) {
+          sessionStorage.setItem('hasVisited', 'true');
+          window.location.href = 'animation.html';
+        }
+      </script>
+</head>
+
+<body>
+    
+    <div class="dark fadeout "></div>
+    <div class="sun slidein "></div>
+    <h1 class="fadein" > Happy Mother's Day  </h1>
+    <h2 class="fadin delay-1" > 影子，母亲节快乐  </h2>
+
+    <section class="flowers">
+        <div class="flower">
+            <div class="flower_head pulse"></div>
+            <div class="flower_stem grow-12"></div>
+        </div>
+
+
+        <div class="flower">
+            <div class="flower_head pulse pink"></div>
+            <div class="flower_stem grow-15"></div>
+        </div>
+
+        <div class="flower">
+            <div class="flower_head pulse yellow "></div>
+            <div class="flower_stem grow-9"></div>
+        </div>
+
+    </section>
+
+
+
+</body>
+</html>

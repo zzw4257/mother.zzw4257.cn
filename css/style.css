@@ -1,5 +1,10 @@
 body {
-  background: #000;
+  margin: 0;
+  padding: 0;
+  font-family: 'Great Vibes', 'Arial', cursive, sans-serif;
+  background: linear-gradient(135deg, #ffe0ec 0%, #fff6e0 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 #wrapper {
@@ -140,3 +145,189 @@ body {
  .text-mom {
   animation: show-text 0.5s linear forwards 3s;
  }
+
+.main-header {
+  text-align: center;
+  margin-top: 40px;
+}
+.main-title {
+  font-size: 3.5rem;
+  color: #f2385a;
+  font-family: 'Great Vibes', 'Arial', cursive;
+  letter-spacing: 4px;
+  text-shadow: 0 4px 16px #fff, 0 2px 8px #f2385a44;
+  margin-bottom: 0;
+}
+.subtitle {
+  font-size: 1.5rem;
+  color: #f7b731;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+.blessing {
+  text-align: center;
+  margin: 30px auto 20px auto;
+  max-width: 600px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 18px;
+  padding: 24px 18px;
+  box-shadow: 0 2px 16px #f2385a22;
+}
+.blessing h2 {
+  color: #f2385a;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.blessing .poem {
+  display: block;
+  margin-top: 12px;
+  color: #b97a56;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.photo-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.photo-carousel img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 24px #f2385a33;
+  border: 6px solid #fff;
+  background: #fff;
+  transition: all 0.5s;
+}
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: #f2385a;
+  cursor: pointer;
+  margin: 0 18px;
+  transition: color 0.2s;
+}
+.carousel-btn:hover {
+  color: #f7b731;
+}
+.message-btn {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 12px 36px;
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, #f2385a 60%, #f7b731 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px #f2385a33;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.message-btn:hover {
+  background: linear-gradient(90deg, #f7b731 60%, #f2385a 100%);
+}
+footer {
+  text-align: center;
+  color: #b97a56;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+#message-box {
+  position: fixed;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff8f0;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #f2385a33;
+  padding: 32px 24px 24px 24px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#message-box.hidden {
+  display: none;
+}
+#message-box .msg-title {
+  font-size: 1.3rem;
+  color: #f2385a;
+  margin-bottom: 12px;
+}
+#message-box textarea {
+  width: 260px;
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid #f7b731;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  resize: none;
+}
+#message-box button {
+  background: #f2385a;
+  color: #fff;
+  border: none;
+  border-radius: 18px;
+  padding: 8px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.petal-bg {
+  pointer-events: none;
+  position: fixed;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+}
+@media (max-width: 600px) {
+  .main-title { font-size: 2.2rem; }
+  .blessing { padding: 14px 6px; font-size: 1rem; }
+  .photo-carousel img { width: 120px; height: 120px; }
+  .carousel-btn { font-size: 1.5rem; margin: 0 6px; }
+  #message-box textarea { width: 90vw; }
+}
+.red-envelope {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #fff0e1 60%, #ffe0ec 100%);
+  border-radius: 16px;
+  padding: 18px 12px 12px 12px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 16px #f2385a22;
+}
+.envelope-icon {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+  animation: shake 1.2s infinite alternate;
+}
+@keyframes shake {
+  0% { transform: rotate(-8deg); }
+  100% { transform: rotate(8deg); }
+}
+.blessing-text {
+  color: #f2385a;
+  font-size: 1.15rem;
+  text-align: center;
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+.receive-btn {
+  background: linear-gradient(90deg, #f2385a 60%, #f7b731 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 38px;
+  font-size: 1.15rem;
+  font-family: inherit;
+  box-shadow: 0 2px 8px #f2385a33;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s;
+}
+.receive-btn:hover {
+  background: linear-gradient(90deg, #f7b731 60%, #f2385a 100%);
+}

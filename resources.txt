@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+$blue: #45b9d3; //rgba(69, 185, 211, 100)
+$darkgreen: #4d916e; //rgba(77, 145, 110, 100)
+$lightgreen: #86af6e; //rgba(134, 175, 110, 100)
+$pink: #e2b1b1; //rgba(226, 177, 177, 100)
+$purple: #cba8ed; //rgba(203, 168, 237, 100)
+
+
+h1 - font-family: 'Poiret One', 'Oleo Script', cursive;
+h2 - font-family: 'Oleo Script', cursive;
